@@ -1,0 +1,41 @@
+import {
+	SiMongodb,
+	SiSass,
+	SiJavascript,
+	SiRedux,
+	SiNextdotjs,
+	SiHtml5,
+	SiCss3,
+	SiGraphql,
+	SiAngular,
+	SiReact,
+	SiNodedotjs,
+	SiGit,
+	SiFirebase,
+	SiPhp,
+	SiWebrtc,
+	SiMysql,
+	SiWordpress,
+} from "react-icons/si";
+
+const svg = {
+	SiMongodb,
+	SiSass,
+	SiJavascript,
+	SiRedux,
+	SiNextdotjs,
+	SiHtml5,
+	SiCss3,
+	SiGraphql,
+	SiAngular,
+	SiReact,
+	SiNodedotjs,
+	SiGit,
+	SiFirebase,
+	SiPhp,
+	SiWebrtc,
+	SiMysql,
+	SiWordpress,
+};
+
+export default svg;

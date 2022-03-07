@@ -1,0 +1,110 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.workContainer {
+	width: 100%;
+	height: 100%;
+	padding: 9rem 0rem;
+	position: relative;
+
+	.title {
+		text-align: center;
+	}
+}
+
+.workInfo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5rem 0;
+	flex-wrap: wrap;
+
+	@include for-768 {
+		flex-direction: column;
+	}
+
+	.workCard {
+		width: 40%;
+		padding: 1.5rem;
+		cursor: pointer;
+
+		.imgContainer {
+			width: 100%;
+			height: auto;
+			display: block;
+			position: relative;
+
+			img {
+				transition: all 0.3s ease-in;
+			}
+
+			.projectLink {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				transition: all 0.3s ease-in;
+				position: absolute;
+				overflow: hidden;
+				text-transform: uppercase;
+				bottom: 0;
+				padding: 1rem;
+				color: white;
+				background-color: $secondary;
+				transform: translateY(-50%);
+				font-size: 1.3rem;
+				opacity: 0;
+				svg {
+					margin-left: 3px;
+				}
+			}
+		}
+
+		&:hover {
+			.imgContainer {
+				img {
+					filter: grayscale(100%);
+				}
+				.projectLink {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
+
+		h2 {
+			padding: 1rem 0;
+		}
+
+		span {
+			color: $secondary;
+		}
+
+		p {
+			color: $primaryBg;
+		}
+
+		.techBar {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+			height: auto;
+			gap: 5px;
+			padding: 1rem 0;
+
+			svg {
+				fill: #3a3a3a;
+				font-size: 2.5rem;
+			}
+		}
+
+		// @include for-910 {
+		// 	width: 30%;
+		// }
+
+		@include for-768 {
+			width: 100%;
+		}
+	}
+}

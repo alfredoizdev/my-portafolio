@@ -1,0 +1,43 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.title {
+	font-size: 3rem;
+	width: 100%;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+	@include for-768 {
+		font-size: 3rem;
+	}
+}
+
+.subTitle {
+	padding: 0;
+	margin: 0;
+	color: $secondary;
+
+	&::before {
+		content: "-";
+		margin-right: 1rem;
+		font-weight: 800;
+		font-size: 2rem;
+		text-align: center;
+		color: black;
+	}
+	&::after {
+		content: "-";
+		margin-left: 1rem;
+		font-weight: 800;
+		font-size: 2rem;
+		text-align: center;
+		color: black;
+	}
+}
+
+.primary {
+	color: white;
+}
+
+.secondary {
+	color: $secondary;
+}

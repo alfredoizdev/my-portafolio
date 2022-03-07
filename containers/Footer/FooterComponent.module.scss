@@ -1,0 +1,24 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.footerContainer {
+	width: 98%;
+	height: 100%;
+	margin: 0 1%;
+	padding: 3rem 25rem;
+	background-color: $secondary;
+	align-items: center;
+	border-top: 1px solid #a6235d45;
+
+	display: flex;
+	justify-content: center;
+
+	@include for-768 {
+		width: 100%;
+		margin: 0;
+		padding: 2rem 2rem;
+		p {
+			font-size: 1.5rem;
+		}
+	}
+}

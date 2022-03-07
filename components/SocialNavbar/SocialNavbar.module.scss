@@ -1,0 +1,22 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.socialBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	svg {
+		fill: $primary;
+		font-size: 2rem;
+		margin: 0 1rem;
+		cursor: pointer;
+
+		transition: all 0.3s ease-in;
+
+		&:hover {
+			fill: $secondary;
+		}
+	}
+}

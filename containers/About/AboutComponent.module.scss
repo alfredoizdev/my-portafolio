@@ -1,0 +1,82 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.aboutContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+
+	.title {
+		flex-direction: column;
+		padding: 3rem;
+		text-align: center;
+		@include for-768 {
+			padding: 1rem;
+		}
+	}
+
+	div {
+		display: flex;
+
+		width: 100%;
+
+		@include for-768 {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		article {
+			padding: 2rem;
+
+			@include for-768 {
+				width: 100%;
+			}
+		}
+	}
+
+	@include for-768 {
+		width: 100%;
+		padding: 7rem 1rem;
+		border-radius: 0px;
+		flex-direction: column;
+	}
+}
+
+.infoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+	p {
+		color: $text;
+	}
+}
+
+.imgContainer {
+	width: 30%;
+	height: auto;
+	display: block;
+}
+
+.buttonsSections {
+	padding-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	button:nth-child(2) {
+		margin-left: 9px;
+	}
+
+	@include for-768 {
+		flex-direction: column;
+		button {
+			margin-left: 0px !important;
+			margin-top: 5px;
+		}
+	}
+}

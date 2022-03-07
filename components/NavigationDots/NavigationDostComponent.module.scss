@@ -1,0 +1,37 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	top: 45%;
+
+	padding: 1rem;
+
+	@include for-768 {
+		display: none;
+	}
+
+	.navigationDot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #cbcbcb;
+		margin: 0.5rem;
+
+		transition: background-color 0.2s ease-in-out;
+
+		&:hover {
+			background-color: #ef92b1;
+		}
+
+		@media screen and (min-width: 2000px) {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

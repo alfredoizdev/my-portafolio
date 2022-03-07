@@ -1,0 +1,15 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.svgPrimary {
+	svg {
+		font-size: 5rem;
+		fill: white;
+	}
+}
+.svgSecondary {
+	svg {
+		font-size: 5rem;
+		fill: $primaryBg;
+	}
+}

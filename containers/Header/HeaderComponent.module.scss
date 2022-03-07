@@ -1,0 +1,189 @@
+@import "/styles/variables/colors";
+@import "/styles/mixins/mixins";
+
+.Banner {
+	background-image: url("../../public/assets/me.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: auto;
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.bg {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(7deg, black 0%, rgb(0 0 0 / 41%) 100%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+}
+
+.bannerInformation {
+	z-index: 1;
+
+	@include for-768 {
+		font-size: 5rem;
+		text-align: center;
+	}
+	article {
+		p {
+			font-size: 2.3rem;
+			color: #cf1667;
+			padding: 0;
+			margin: 0;
+			font-weight: 800;
+		}
+		h2 {
+			font-size: 9rem;
+			color: white;
+			span {
+				color: $secondary;
+			}
+
+			@include for-768 {
+				font-size: 6rem;
+			}
+
+			@include for-450 {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+
+.techBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 2rem 0;
+	flex-wrap: wrap;
+
+	div {
+		@include shadom-1;
+		width: 70px;
+		height: 70px;
+		margin: 0rem 1rem;
+		background-color: $secondary;
+
+		border-radius: 3px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+			font-size: 6rem;
+			width: 100%;
+			padding: 0.1rem;
+
+			@include for-768 {
+				margin: 1rem 1rem;
+			}
+		}
+
+		@include for-768 {
+			margin: 1rem 1rem;
+		}
+	}
+
+	div:nth-child(2) {
+		width: 90px;
+		height: 90px;
+	}
+
+	div:nth-child(3) {
+		width: 105px;
+		height: 105px;
+	}
+	div:nth-child(4) {
+		width: 110px;
+		height: 110px;
+	}
+
+	div:nth-child(5) {
+		width: 130px;
+		height: 130px;
+	}
+
+	div:nth-child(6) {
+		width: 110px;
+		height: 110px;
+	}
+	div:nth-child(7) {
+		width: 110px;
+		height: 110px;
+	}
+	div:nth-child(8) {
+		width: 90px;
+		height: 90px;
+	}
+
+	@include for-768 {
+		div:nth-child(2) {
+			width: 70px;
+			height: 70px;
+		}
+
+		div:nth-child(3) {
+			width: 80px;
+			height: 80px;
+		}
+		div:nth-child(4) {
+			width: 90px;
+			height: 90px;
+		}
+
+		div:nth-child(5) {
+			width: 100px;
+			height: 100px;
+		}
+
+		div:nth-child(6) {
+			width: 90px;
+			height: 90px;
+		}
+		div:nth-child(7) {
+			width: 80px;
+			height: 110px;
+		}
+		div:nth-child(8) {
+			width: 70px;
+			height: 70px;
+		}
+	}
+}
+
+.mouseIcon {
+	position: absolute;
+	left: 50%;
+	bottom: 150px;
+	border: 2px solid #fff;
+	border-radius: 16px;
+	height: 50px;
+	width: 30px;
+	margin-left: -17px;
+	display: block;
+	z-index: 10;
+
+	@include for-768 {
+		bottom: 20px;
+	}
+
+	.wheel {
+		position: relative;
+		border-radius: 10px;
+		background: #fff;
+		width: 4px;
+		height: 10px;
+		top: 4px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

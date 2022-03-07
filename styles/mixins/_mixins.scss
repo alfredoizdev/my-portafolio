@@ -1,0 +1,84 @@
+@mixin for-327 {
+	@media (max-width: 327px) {
+		@content;
+	}
+}
+
+@mixin for-450 {
+	@media (max-width: 450px) {
+		@content;
+	}
+}
+
+@mixin for-640 {
+	@media (max-width: 640px) {
+		@content;
+	}
+}
+@mixin for-768 {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin for-910 {
+	@media (max-width: 910px) {
+		@content;
+	}
+}
+@mixin for-950 {
+	@media (max-width: 950px) {
+		@content;
+	}
+}
+@mixin for-990 {
+	@media (max-width: 990px) and (min-width: 768px) {
+		@content;
+	}
+}
+@mixin for-1024 {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin for-1110 {
+	@media (max-width: 1110px) {
+		@content;
+	}
+}
+@mixin for-1125 {
+	@media (max-width: 1125px) {
+		@content;
+	}
+}
+@mixin for-1280 {
+	@media (max-width: 1280px) {
+		@content;
+	}
+}
+@mixin for-1536 {
+	@media (max-width: 1536px) {
+		@content;
+	}
+}
+
+@mixin for-1920 {
+	@media (min-width: 1920px) {
+		@content;
+	}
+}
+
+@mixin border-bot($borderColor: color) {
+	border-bottom: 1px solid $borderColor;
+}
+
+@mixin shadom-1 {
+	box-shadow: 3px 6px 13px 4px rgb(132 31 36 / 7%);
+}
+
+@mixin shadom-2 {
+	box-shadow: 0px 10px 40px rgba(132, 31, 36, 0.07);
+}
+
+@mixin shadom-3 {
+	box-shadow: 3px 4px 10px 2px rgb(207 22 103 / 34%);
+}
