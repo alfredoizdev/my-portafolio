@@ -30,6 +30,10 @@
 		margin: -5px 0;
 	}
 
+	@include for-450 {
+		margin: -7px 0;
+	}
+
 	svg {
 		width: 100%;
 	}
